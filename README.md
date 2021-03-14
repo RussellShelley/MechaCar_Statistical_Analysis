@@ -49,6 +49,7 @@ Summary statistics by lot.
     - Looking at the summary for all lots we see that the mean and median are very close.  This suggests a **normal distribution**.
     - For normally distributed data three standard deviations account for 99.73 percent; and four standard deviations account for 99.994 percent of data.
     - With a SD of 7.9 we would expect the PSI for all coils to fall into a range of 1532 to 1468.
+    -  Variance = The average of the squared differences from the Mean.
     - **The overall variance is 62.3 which is under the 100 psi threshold.**
 - Summary statistics by lot
     - Lot 1
@@ -56,6 +57,39 @@ Summary statistics by lot.
     - Lot 2 
         - Slightly higher SD and larger variance suggest this lot is more spread out than Lot 1 but still well within guidelines.
     - Lot 3 
-        - This lot has a variance of 170 psi which is greater than our accepted limit. **This batch of coils, when looked at alone, fail.**
+        - **This lot has a variance of 170 psi which is greater than our accepted limit. This batch of coils, when looked at alone, fail.**
         - The SD shows us that these are spread out further from the mean.
-        - The  variability of this Lot was previously hidden when we looked at the total of all groups. 
+        - The  variance of this Lot was previously hidden when we looked at the total of all groups. 
+
+## T-Tests on Suspension Coils
+
+### Overview
+
+### Results
+All lots compared to population mean(1500)
+![Suspension T test](Analysis/Suspension_Ttest.png)
+
+Lot 1 T test.
+![Lot 1 Suspension T test](Analysis/Lot1_Suspension_Ttest.png)      
+
+Lot 2 T test. 
+
+![Lot 2 Suspension T test](Analysis/Lot2_Suspension_Ttest.png)
+
+Lot 3 T test
+
+![Lot 3 Suspension T test](Analysis/Lot3_Suspension_Ttest.png) 
+
+### Summary
+
+
+
+## Study Design: MechaCar vs Competition
+
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+In your description, address the following questions:
+What metric or metrics are you going to test?
+What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why?
+What data is needed to run the statistical test?
+
