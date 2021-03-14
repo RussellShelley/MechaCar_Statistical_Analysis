@@ -51,8 +51,11 @@ Summary statistics by lot.
     - With a SD of 7.9 we would expect the PSI for all coils to fall into a range of 1532 to 1468.
     - **The overall variance is 62.3 which is under the 100 psi threshold.**
 - Summary statistics by lot
-    - **Lot 1** The low SD and variance suggest all psi values gathered tightly around the mean. 
-    -**Lot 2**  Slightly higher SD and larger variance suggest this lot is more spread out than Lot 1 but still well within guidelines.
-    -**Lot 3**  This lot has a variance of 170 psi which is greater than our accepted limit. **This batch of coils taken on its own fail.**
-    - The SD shows us that these are spread out further from the mean.
-    - The  variability of this Lot was previously hidden when we looked at the total of all groups. 
+    - Lot 1
+        - The low SD and variance suggest all psi values gathered tightly around the mean. 
+    - Lot 2 
+        - Slightly higher SD and larger variance suggest this lot is more spread out than Lot 1 but still well within guidelines.
+    - Lot 3 
+        - This lot has a variance of 170 psi which is greater than our accepted limit. **This batch of coils, when looked at alone, fail.**
+        - The SD shows us that these are spread out further from the mean.
+        - The  variability of this Lot was previously hidden when we looked at the total of all groups. 
