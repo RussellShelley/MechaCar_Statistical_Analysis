@@ -1,9 +1,10 @@
-# MechaCar_Statistical_Analysis
+# MechaCar Statistical Analysis
 
-We are reviewing the production data for insights that may help the manufacturing team.
+We are reviewing the production data for insights that may help the manufacturing team of the new MechaCar.
 
 ## Linear Regression to Predict MPG
-### Overview
+
+
 We are performing multiple linear regression analysis to identify which variables in the dataset(Vehicle length, vehicle weight, spoiler angle, ground clearance,drive type) can be used to predict the mpg of MechaCar prototypes.
 ### Results
 ![MPG Summary](./Analysis/SummaryStatsMPG.png)
@@ -25,7 +26,7 @@ The low p-value for intercept suggests we should reject the null hypothesis.
 
 
 ## Summary Statistics on Suspension Coils
-### Overview
+
 The weight capacities of multiple suspension coils have been tested to determine if the manufacturing process is consistent across production lots.We are creating  summary statistics tables to show:
  - The suspension coil’s PSI continuous variable across all manufacturing lots
 - The following PSI metrics for each lot: mean, median, variance, and standard deviation.
@@ -43,19 +44,17 @@ Summary statistics by lot.
 
 ### Summary
 
-- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-
+- The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. 
   - Total Summary statistics table  
     - Looking at the summary for all lots we see that the mean and median are very close.  This suggests a **normal distribution**.
     - For normally distributed data three standard deviations account for 99.73 percent; and four standard deviations account for 99.994 percent of data.
     - With a SD of 7.9 we would expect the PSI for all coils to fall into a range of 1532 to 1468.
-    -  Variance = The average of the squared differences from the Mean.
-    - **The overall variance is 62.3 which is under the 100 psi threshold.**
+    -  **The overall variance is 62.3 which is under the 100 psi threshold.**
 - Summary statistics by lot
     - Lot 1
-        - The low SD and variance suggest all psi values gathered tightly around the mean. 
+        - The low SD and variance suggest all psi values gathered tightly around the mean. **Variance within guideline**
     - Lot 2 
-        - Slightly higher SD and larger variance suggest this lot is more spread out than Lot 1 but still well within guidelines.
+        - Slightly higher SD and larger variance suggest this lot is more spread out than Lot 1 but still well within guidelines. **Variance within guideline**
     - Lot 3 
         - **This lot has a variance of 170 psi which is greater than our accepted limit. This batch of coils, when looked at alone, fail.**
         - The SD shows us that these are spread out further from the mean.
@@ -63,7 +62,7 @@ Summary statistics by lot.
 
 ## T-Tests on Suspension Coils
 
-### Overview
+
 One sample t-test used on the complete data set and then each production run individually. The data will be compared  to a population mean(1500) **The null hypothesis is mean is equal to 1500.** We will use the common 0.05 as a significance level, a p-value above this will mean we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 ### Results
 
@@ -71,28 +70,33 @@ One sample t-test used on the complete data set and then each production run ind
 
 ![Suspension  t-test](Analysis/Suspension_Ttest.png)
 
+ - The p-value for the first test containing all lots = 0.06 which is a little above the 0.05 threshold. 
+    - Fail to reject null hypothesis. Means are statistically similar.
+
 Lot 1 t-test.
 
-![Lot 1 Suspension t-test](Analysis/Lot1_Suspension_Ttest.png)      
+![Lot 1 Suspension t-test](Analysis/Lot1_Suspension_Ttest.png)     
+- The p-value for Lot 1 = 1
+    - Fail to reject null hypothesis 
 
 Lot 2 t-test. 
 
 ![Lot 2 Suspension t-test](Analysis/Lot2_Suspension_Ttest.png)
+- The p-value for Lot 2 = 0.6
+    - Fail to reject null hypothesis
 
 Lot 3 t-test
 
 ![Lot 3 Suspension t-test](Analysis/Lot3_Suspension_Ttest.png) 
 
-### Summary
-- **The null hypothesis is mean is equal to 1500.**
- - The p-value for the first test containing all lots = 0.06 which is a little above the 0.05 threshold. 
-    - Fail to reject null hypothesis. Means statistically similar.
- - The p-value for Lot 1 = 1
-    - Fail to reject null hypothesis
-  - The p-value for Lot 2 = 0.6
-    - Fail to reject null hypothesis  
 - The p-value for Lot 3 = 0.04
     - We can reject the null hypothesis, and accept alternative hypothesis(true mean is not equal to 1500)
+
+<br>
+<br>
+
+
+
 
 
 
@@ -100,7 +104,7 @@ Lot 3 t-test
 
 ## Study Design: MechaCar vs Competition
 
-
+**Metric to compare**
 - With fuel prices rising, the true cost of a car is increasingly influenced by fuel efficiency. Cost will be a factor that influences customers. We could compare cost of ownership (price plus fuel) of our prototypes to other manufacturers.
 
 **Data needed**
@@ -111,7 +115,7 @@ Lot 3 t-test
  - H0: MechaCar prototypes' cost of ownership is similar to competitor's vehicles in the same vehicles Ha: MechaCar prototypes' cost of ownership is statistically above or below that of competitor vehicles.
 
 **Test type**
-- As we have a continuous variable and different samples we can  use an ANOVA test. 
+- As we have a continuous variable, and we are looking at multiple samples we can use an ANOVA test. 
 
 
 
