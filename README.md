@@ -64,21 +64,21 @@ Summary statistics by lot.
 ## T-Tests on Suspension Coils
 
 ### Overview
-
+One sample t-test used on complete data set and then each production run individually.
 ### Results
 All lots compared to population mean(1500)
-![Suspension T test](Analysis/Suspension_Ttest.png)
+![Suspension  t-test](Analysis/Suspension_Ttest.png)
 
-Lot 1 T test.
-![Lot 1 Suspension T test](Analysis/Lot1_Suspension_Ttest.png)      
+Lot 1 t-test.
+![Lot 1 Suspension t-test](Analysis/Lot1_Suspension_Ttest.png)      
 
-Lot 2 T test. 
+Lot 2 t-test. 
 
-![Lot 2 Suspension T test](Analysis/Lot2_Suspension_Ttest.png)
+![Lot 2 Suspension t-test](Analysis/Lot2_Suspension_Ttest.png)
 
-Lot 3 T test
+Lot 3 t-test
 
-![Lot 3 Suspension T test](Analysis/Lot3_Suspension_Ttest.png) 
+![Lot 3 Suspension t-test](Analysis/Lot3_Suspension_Ttest.png) 
 
 ### Summary
 
