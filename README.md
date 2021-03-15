@@ -108,8 +108,10 @@ Lot 3 t-test
 - With fuel prices rising, the true cost of a car is increasingly influenced by fuel efficiency. Cost will be a factor that influences customers. We could compare cost of ownership (price plus fuel) of our prototypes to other manufacturers.
 
 **Data needed**
-- The data we need can be calculated from vehicle price and a figure derived from the MPG rating and the average US miles driven.
+- The data we need can be calculated from vehicle price/number of years it will hold value and a figure derived from the MPG rating and the average US miles driven.   
+We will then create a cost of ownership $ figure.
 - The same data would be then calculated for all our competitors vehicles.
+- (Here I am not factoring in insurance and repair costs)
 
 **Hypothesis**
  - H0: MechaCar prototypes' cost of ownership is similar to competitor's vehicles in the same vehicles Ha: MechaCar prototypes' cost of ownership is statistically above or below that of competitor vehicles.
