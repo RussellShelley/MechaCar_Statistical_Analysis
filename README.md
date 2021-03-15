@@ -64,12 +64,15 @@ Summary statistics by lot.
 ## T-Tests on Suspension Coils
 
 ### Overview
-One sample t-test used on complete data set and then each production run individually.
+One sample t-test used on the complete data set and then each production run individually. The data will be compared  to a population mean(1500) **The null hypothesis is mean is equal to 1500.** We will use the common 0.05 as a significance level, a p-value above this will mean we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 ### Results
-All lots compared to population mean(1500)
+
+
+
 ![Suspension  t-test](Analysis/Suspension_Ttest.png)
 
 Lot 1 t-test.
+
 ![Lot 1 Suspension t-test](Analysis/Lot1_Suspension_Ttest.png)      
 
 Lot 2 t-test. 
@@ -81,15 +84,35 @@ Lot 3 t-test
 ![Lot 3 Suspension t-test](Analysis/Lot3_Suspension_Ttest.png) 
 
 ### Summary
+- **The null hypothesis is mean is equal to 1500.**
+ - The p-value for the first test containing all lots = 0.06 which is a little above the 0.05 threshold. 
+    - Fail to reject null hypothesis. Means statistically similar.
+ - The p-value for Lot 1 = 1
+    - Fail to reject null hypothesis
+  - The p-value for Lot 2 = 0.6
+    - Fail to reject null hypothesis  
+- The p-value for Lot 3 = 0.04
+    - We can reject the null hypothesis, and accept alternative hypothesis(true mean is not equal to 1500)
+
+
 
 
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+
+- With fuel prices rising, the true cost of a car is increasingly influenced by fuel efficiency. Cost will be a factor that influences customers. We could compare cost of ownership (price plus fuel) of our prototypes to other manufacturers.
+
+**Data needed**
+- The data we need can be calculated from vehicle price and a figure derived from the MPG rating and the average US miles driven.
+- The same data would be then calculated for all our competitors vehicles.
+
+**Hypothesis**
+ - H0: MechaCar prototypes' cost of ownership is similar to competitor's vehicles in the same vehicles Ha: MechaCar prototypes' cost of ownership is statistically above or below that of competitor vehicles.
+
+**Test type**
+- As we have a continuous variable and different samples we can  use an ANOVA test. 
+
+
+
 
