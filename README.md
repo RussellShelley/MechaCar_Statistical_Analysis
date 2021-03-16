@@ -111,7 +111,7 @@ Lot 3 t-test
 - The data we need can be calculated from vehicle price/number of years it will hold value and a figure derived from the MPG rating and the average US miles driven.   
 We will then create a cost of ownership $ figure.
 - The same data would be then calculated for all our competitors vehicles.
-- (Here I am not factoring in insurance and repair costs)
+
 
 **Hypothesis**
  - H0: MechaCar prototypes' cost of ownership is similar to competitor's vehicles in the same vehicles Ha: MechaCar prototypes' cost of ownership is statistically above or below that of competitor vehicles.
